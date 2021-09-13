@@ -2,6 +2,10 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+.shop-header{
+  font-family: 'Bangers', cursive;
+  color: darkgoldenrod;
+}
 .search-field {
   border: none;
   border-radius: 50px;
@@ -35,15 +39,14 @@ body {
   align-items: center;
   justify-content: center;
 }
-.card{
-  background: seashell;
-}
-.product:hover{
-  background: lightpink;
-}
+
 .single-product {
   padding: 10px;
   transition: 0.6s;
+  min-height: 400px;
+  max-width: 20rem;
+  border-radius: 20px;
+  background-color:moccasin;
 }
 
 .single-product:hover {
@@ -55,18 +58,7 @@ body {
   width: 150px;
   height: 150px;
 }
-.buy-now{
-  background: #00ACC1;
-  padding: 5px;
-  border-radius: 5px;
-  color: white;
-}
-.details{
-  background: #FC8F04;
-  padding: 5px;
-  border-radius: 5px;
-  color: white;
-}
+
 .cart {
   width: 350px;
   /* border: 1px solid green; */
