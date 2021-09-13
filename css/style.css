@@ -29,24 +29,27 @@ body {
   border-radius: 25px;
   margin-left: 25px;
 }
-#all-products {
+/* #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid black; */
+  /* border: 1px solid black;
   text-align: center;
   width: 100%;
   margin: auto;
   align-items: center;
   justify-content: center;
-}
+} */ */
 
 .single-product {
-  padding: 10px;
+  padding: 5px;
   transition: 0.6s;
   min-height: 400px;
-  max-width: 20rem;
-  border-radius: 20px;
-  background-color:moccasin;
+  max-width: 18rem;
+  /* border-radius: 20px; */
+  
+}
+.bg-color{
+  
 }
 
 .single-product:hover {

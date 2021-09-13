@@ -11,18 +11,25 @@ const showProducts = (products) => {
     console.log(product);
     const image = product.image;
     const div = document.createElement("div");
-    div.classList.add("product");
-    div.classList.add("single-product");
+    // div.classList.add("product");
+    // div.classList.add("single-product");
+    div.classList.add('col');
     div.innerHTML = `
-    <img class="product-image" src=${image}></img>
+      <div class='card h-100 text-center'>
+      <div>
+      <img class="card-img-top w-50 pt-3" src=${image}></img>
       </div>
-      <h3>${product.title}</h3>
+      <div class='card-body'>
+      <h5 class='card-title'>${product.title}</h5>
       <p>Category: ${product.category}</p>
-      <h2>Price: $ ${product.price}</h2>
+      <h5>Price: $ ${product.price}</h5>
       <h6>Avg. Ratings: ${product.rating.rate}</h6>
       <h6>Total Ratings: ${product.rating.count}</h6>
+      </div>
+      <div class="card-footer">
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="btn btn-primary">add to cart</button>
-      <button id="details-btn" class="btn btn-warning text-white">Details</button></div>
+      <button id="details-btn" class="btn btn-warning text-white">Details</button> </div>
+      </div>
       `;
     document.getElementById("all-products").appendChild(div);
   }
